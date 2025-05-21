@@ -1,0 +1,176 @@
+/* General Reset and Base Styles */
+body {
+  margin: 0;
+  font-family: 'Jost', sans-serif;
+  background-color: #f3edef;
+  color: #333;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #ffffff;
+  padding: 35px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #8c6a6a;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  transition: color 0.6s ease, font-weight 0.6s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #503f3f;     /* Darker mauve */
+  font-weight: 700;   /* Bolder */
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 50px;
+  background-color: #f3edef;
+  flex-wrap: wrap;
+}
+
+.photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.intro {
+  max-width: 600px;
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+.intro h1 {
+  font-size: 80px;
+  color: #a98383;
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.intro p {
+  font-size: 18px;
+  line-height: 2;
+  color: #a98383;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+}
+
+/* Footer */
+footer {
+  background-color: #ffffff;
+  color: #333;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 14px;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+/* Projects Page */
+.projects-section {
+  padding: 60px 40px;
+  background-color: #f3edef;
+}
+
+.projects-title {
+  font-size: 48px;
+  color: #a98383;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 40px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  border-radius: 4px;
+}
+
+.project-card p {
+  flex: 1;
+  color: #a98383;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.project-card img {
+  width: 180px;
+  height: auto;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+/* About Page Photo Styling */
+.about-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 50px;
+  background-color: #f3edef;
+}
+
+.photo-container {
+  width: 300px;
+  height: 400px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.intro {
+  margin-left: 60px;
+  max-width: 500px;
+}
+
+.intro h1 {
+  font-size: 48px;
+  color: #a98383;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.6;
+}
