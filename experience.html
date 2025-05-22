@@ -1,21 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Experience | Melanie Malek</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- Header -->
   <header>
     <nav>
       <a href="about.html">About</a>
       <a href="projects.html">Projects</a>
-      <a href="skills.html">Skills</a>
       <a href="experience.html" class="active">Experience</a>
       <a href="contact.html">Contact</a>
     </nav>
+    <div class="initials">MM</div>
   </header>
 
+  <!-- Experience Title -->
+  <div class="experience-title-wrapper">
+    <h2 class="experience-title">Experience</h2>
+  </div>
+
+  <!-- Timeline -->
+  <section class="timeline">
+
+    <!-- Left-aligned item -->
+    <div class="timeline-item left">
+      <div class="timeline-date right-date">01/2025 – 05/2025</div>
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <h3>👨‍💻QA Automation Tester (Co-op)</h3>
+        <h4>Global Affairs Canada</h4>
+        <p>
+          Supported QA automation and contributed to backend feature development. Tools included Selenium, Java, and Git. Participated in daily stand-ups and sprint cycles.
+        </p>
+      </div>
+    </div>
+
+    <!-- Right-aligned item -->
+    <div class="timeline-item right">
+      <div class="timeline-date left-date">05/2024 – 12/2024</div>
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <h3>✔️Junior Programmer/Analyst</h3>
+        <h4>Department of National Defense</h4>
+        <p>
+          Developed and maintained Selenium test scripts for multiple environments. Collaborated with cross-functional teams to improve system reliability and regression testing.
+        </p>
+      </div>
+    </div>
+
+    <!-- Left-aligned item -->
+    <div class="timeline-item left">
+      <div class="timeline-date right-date">06/2023 – 12/2023</div>
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <h3>👓Administrative/Optometrist Assistant</h3>
+        <h4>Dr. Michelle Davidson & Associates</h4>
+        <p>
+          Built custom websites using HTML, CSS, and JavaScript. Created branded graphics and wireframes. Focused on responsive, accessible design.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="resume-download">
+  <a href="Melanie_Malek_Resume.pdf" download>
+    <button class="resume-btn">
+      <i class="fas fa-download"></i> Download My Resume
+    </button>
+  </a>
+  </div>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>©Melanie Malek. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+  const items = document.querySelectorAll('.timeline-item');
+  window.addEventListener('scroll', () => {
+    items.forEach(item => {
+      const top = item.getBoundingClientRect().top;
+      if (top < window.innerHeight - 100) {
+        item.classList.add('visible');
+      }
+    });
+  });
+  </script>
+
+
+</body>
 </html>
