@@ -37,7 +37,7 @@ nav a {
 
 nav a:hover,
 nav a.active {
-  color: #503f3f;     /* Darker mauve */
+  color: #503f3f;
   font-weight: 600;
 }
 
@@ -209,7 +209,6 @@ footer {
   cursor: pointer;
 }
 
-/* Modal Overlay */
 .modal {
   display: none;
   position: fixed;
@@ -223,7 +222,6 @@ footer {
   align-items: center;
 }
 
-/* Modal Box */
 .modal-content {
   background-color: #ffffff;
   padding: 30px 40px;
@@ -236,7 +234,6 @@ footer {
   max-width: 400px;
 }
 
-/* Close Button */
 .close-btn {
   float: right;
   font-size: 24px;
@@ -247,7 +244,6 @@ footer {
 .close-btn:hover {
   color: #5c4242;
 }
-
 
 
 
@@ -279,7 +275,7 @@ footer {
   display: flex;
   align-items: center;
   background-color: #ffffff;
-  padding: 25px 30px; /* ⬅️ Increased top/bottom padding */
+  padding: 25px 30px; 
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   min-width: 320px;
@@ -292,7 +288,6 @@ footer {
   font-family: 'Helvetica Neue', sans-serif;
   text-align: center;
 }
-
 
 .contact-card img {
   width: 16px;
@@ -325,8 +320,6 @@ footer {
   font-family: 'Helvetica Neue', sans-serif;
 }
 
-/* ===== Timeline Base ===== */
-/* Timeline container */
 .timeline {
   position: relative;
   background-color: #f3edef;
@@ -335,7 +328,6 @@ footer {
   margin: 0 auto;
 }
 
-/* Vertical center line */
 .timeline::before {
   content: '';
   position: absolute;
@@ -348,7 +340,6 @@ footer {
   z-index: 0;
 }
 
-/* Timeline item wrapper */
 .timeline-item {
   position: relative;
   width: 100%;
@@ -358,7 +349,6 @@ footer {
   margin-bottom: 100px;
 }
 
-/* Left and right sides */
 .timeline-item.left {
   flex-direction: row-reverse;
 }
@@ -367,7 +357,6 @@ footer {
   flex-direction: row;
 }
 
-/* Content card */
 .timeline-content {
   background-color: #ffffff;
   padding: 20px 25px;
@@ -387,11 +376,11 @@ footer {
 }
 
 .timeline-item.left .timeline-content {
-  margin-right: 100px; /* Push it further left from the center line */
+  margin-right: 100px; 
 }
 
 .timeline-item.right .timeline-content {
-  margin-left: 100px;  /* Push it further right from the center line */
+  margin-left: 100px; 
 }
 
 
