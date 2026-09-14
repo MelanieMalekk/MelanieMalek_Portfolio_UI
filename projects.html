@@ -1,104 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects | Melanie Malek</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
-<!-- Popup -->
-<div id="popup-modal" class="modal">
-  <div class="modal-content">
-    <span class="close-btn">&times;</span>
-    <p>This project page is coming soon!</p>
-  </div>
-</div>
-
-<script>
-  const modal = document.getElementById("popup-modal");
-  const closeBtn = document.querySelector(".close-btn");
-
-  function showPopup(event) {
-    event.preventDefault();
-    modal.style.display = "flex";
-  }
-
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none";
-  });
-
-  window.addEventListener("click", (event) => {
-    if (event.target === modal) {
-      modal.style.display = "none";
-    }
-  });
-</script>
-
-
 <body>
-
-  <header>
-    <nav>
-      <a href="index.html">About</a>
-      <a href="projects.html" class="active">Projects</a>
-      <a href="experience.html">Experience</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-      <div class="initials">MM</div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">MM</div>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">About</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-    <div class="projects-title-wrapper">
-        <h2 class="projects-title">Projects</h2>
-    </div>
+  <main class="container">
+    <section class="page-hero">
+      <p class="eyebrow">Projects</p>
+      <h1>Selected Work</h1>
+      <p class="page-intro">
+        A few examples of design-driven, user-focused projects I’ve built across web development, UI design, and interactive experiences.
+      </p>
+    </section>
 
-  <section class="projects-section">
-    <div class="projects-grid">
-      <div class="project-card">
-        <p>
-          A professional website for a dental clinic offering a range of services (cleanings, orthodontics, emergencies)
-          with online booking, dentist profiles, an interactive map, and client testimonials.
-        </p>
-        <a href="https://jamesmalek047.github.io/UI_UX_Group_Projects/" >
-        <img src="dental-clinic.jpg" alt="Dental clinic project image">
-        </a>      
-      </div>
+    <section class="projects-grid" aria-label="Portfolio project list">
+      <article class="project-card">
+        <div class="project-media">
+          <img src="dental-clinic.jpg" alt="Dental clinic website preview" />
+        </div>
+        <div class="project-body">
+          <h3>Dental Clinic Website</h3>
+          <p>
+            A professional clinic website featuring online booking, service pages, provider profiles, testimonials, and clear patient-focused navigation.
+          </p>
+          <a class="project-link" href="https://jamesmalek047.github.io/UI_UX_Group_Projects/" target="_blank" rel="noreferrer">Open project →</a>
+        </div>
+      </article>
 
-      <div class="project-card">
-        <p>
-          A fun and simple online game where a list of words appear for a few second and the player must test their memory 
-          and remember as many words as they can.
-        </p>
-        <a href="https://frabjous-mousse-7910ff.netlify.app/index.html" >
-        <img src= "word-flash.png" alt="Cyberpunk GUI game screenshot">
-        </a>  
-      </div>
+      <article class="project-card">
+        <div class="project-media">
+          <img src="word-flash.png" alt="Word flash memory game preview" />
+        </div>
+        <div class="project-body">
+          <h3>Word Flash Memory Game</h3>
+          <p>
+            A fun browser-based memory challenge where players view and recall a set of words under time pressure, building a quick and engaging gameplay loop.
+          </p>
+          <a class="project-link" href="https://frabjous-mousse-7910ff.netlify.app/index.html" target="_blank" rel="noreferrer">Open project →</a>
+        </div>
+      </article>
 
-      <div class="project-card">
-        <p>
-          An e-commerce website for a modern streetwear brand, featuring product categories, filters, a shopping cart,
-          secure checkout, and user accounts.
-        </p>
-        <a href="https://monumental-chimera-629d6c.netlify.app/home.html">
-        <img src="online-clothes-shopping.jpg" alt="Streetwear e-commerce site">
-        </a>
-      </div>
+      <article class="project-card">
+        <div class="project-media">
+          <img src="online-clothes-shopping.jpg" alt="Streetwear e-commerce website preview" />
+        </div>
+        <div class="project-body">
+          <h3>Streetwear E-Commerce Shop</h3>
+          <p>
+            A modern storefront experience with categories, account flow, shopping cart logic, product filtering, and a user-friendly checkout concept.
+          </p>
+          <a class="project-link" href="https://monumental-chimera-629d6c.netlify.app/home.html" target="_blank" rel="noreferrer">Open project →</a>
+        </div>
+      </article>
 
-      <div class="project-card">
-        <p>
-          An interactive data visualization site displaying player and team statistics across various sports.
-          Users can filter by league, player, or season to view charts, performance trends, and comparison dashboards.
-        </p>
-        <a href="https://melaniemalekk.github.io/Final_Website/">
-        <img src="sport-app.jpg" alt="Sports data dashboard">
-        </a>
-      </div>
-    </div>
-  </section>
+      <article class="project-card">
+        <div class="project-media">
+          <img src="sport-app.jpg" alt="Sports dashboard preview" />
+        </div>
+        <div class="project-body">
+          <h3>Sports Data Dashboard</h3>
+          <p>
+            An interactive data dashboard that visualizes player and team statistics by league, season, and performance category for clear comparisons.
+          </p>
+          <a class="project-link" href="https://melaniemalekk.github.io/Final_Website/" target="_blank" rel="noreferrer">Open project →</a>
+        </div>
+      </article>
+    </section>
+  </main>
 
-  <footer>
-    <p>©Melanie Malek. All Rights Reserved.</p>
+  <footer class="site-footer">
+    <p>© 2026 Melanie Malek. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
