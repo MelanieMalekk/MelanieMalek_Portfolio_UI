@@ -4,24 +4,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Melanie Malek | Software Engineer</title>
+  <meta name="description" content="Melanie Malek is a software engineering student at the University of Ottawa building thoughtful, user-centered digital experiences across web development, automation, and AI-enabled tools." />
+  <meta property="og:title" content="Melanie Malek | Software Engineer" />
+  <meta property="og:description" content="Software engineering student building thoughtful, user-centered digital experiences." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="my-picture.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%234f2f3b'/%3E%3Ctext x='32' y='43' font-family='Arial, Helvetica, sans-serif' font-size='26' font-weight='700' fill='%23f7d7b8' text-anchor='middle'%3EMM%3C/text%3E%3C/svg%3E" />
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">MM</div>
       <nav class="nav-links" aria-label="Main navigation">
-        <a href="index.html" class="active">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="skills.html">Skills</a>
-        <a href="experience.html">Experience</a>
-        <a href="contact.html">Contact</a>
+        <a href="#about" class="active" aria-current="page">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
+  <main id="main-content">
+    <section class="hero" id="about">
       <div class="container hero-grid single-column-hero">
         <div class="hero-copy hero-copy-centered">
           <p class="eyebrow">Software Engineer</p>
@@ -36,12 +45,12 @@
 
           <div class="cta-row">
             <a class="primary-btn" href="Melanie Malek Resume.pdf" download>Download Resume</a>
-            <a class="secondary-btn" href="projects.html">View Projects</a>
+            <a class="secondary-btn" href="#projects">View Projects</a>
           </div>
 
           <div class="stat-grid">
             <div class="stat">
-              <strong>3+</strong>
+              <strong>4</strong>
               <span>Co-op roles</span>
             </div>
             <div class="stat">
@@ -49,7 +58,7 @@
               <span>Technical stacks</span>
             </div>
             <div class="stat">
-              <strong>3.65</strong>
+              <strong>3.9</strong>
               <span>GPA</span>
             </div>
           </div>
@@ -70,11 +79,275 @@
       </div>
     </section>
 
+    <section class="section-shell timeline-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <h3>Experience</h3>
+          <p>Recent roles spanning software engineering, automation, AI-enabled workflow design, and systems support.</p>
+        </div>
+
+        <div class="timeline" aria-label="Experience timeline">
+          <article class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="company-row">
+                  <img class="company-logo" src="GOC Logo.png" alt="Government of Canada logo" loading="lazy" />
+                  <div>
+                    <p class="timeline-company">Department of National Defence - Government of Canada</p>
+                  </div>
+                </div>
+                <span class="timeline-period">May 2025 – Aug 2025</span>
+              </div>
+
+              <h4>Project Engineering Student – Electronic Warfare (Co-op)</h4>
+              <p>Engineered an AI-powered supplier-sourcing agent with Copilot, automating workflows and improving resource efficiency.</p>
+              <ul class="tech-list">
+                <li>Copilot AI Agents</li>
+                <li>PMBOK</li>
+                <li>Power BI</li>
+                <li>Project Management</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="company-row">
+                  <img class="company-logo" src="Nokia Logo.png" alt="Nokia logo" loading="lazy" />
+                  <div>
+                    <p class="timeline-company">Nokia</p>
+                  </div>
+                </div>
+                <span class="timeline-period">Sep 2025 – Dec 2025</span>
+              </div>
+
+              <h4>Tools &amp; Automation Software Developer (Co-op)</h4>
+              <p>Developed and deployed web applications, dashboards, and internal tools to streamline operations and support cross-functional teams.</p>
+              <ul class="tech-list">
+                <li>Python</li>
+                <li>Django</li>
+                <li>Flask</li>
+                <li>Kubernetes</li>
+                <li>Helm</li>
+                <li>OpenStack</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="company-row">
+                  <img class="company-logo" src="GOC Logo.png" alt="Global Affairs Canada logo" loading="lazy" />
+                  <div>
+                    <p class="timeline-company">Global Affairs Canada</p>
+                  </div>
+                </div>
+                <span class="timeline-period">Jan 2025 – Apr 2025</span>
+              </div>
+
+              <h4>QA Automation Tester (Co-op)</h4>
+              <p>Built and maintained Selenium Java automation scripts, performed manual testing, and tracked defects in Agile release cycles.</p>
+              <ul class="tech-list">
+                <li>Java</li>
+                <li>Selenium</li>
+                <li>JUnit</li>
+                <li>Automation Testing</li>
+                <li>Agile</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="company-row">
+                  <img class="company-logo" src="GOC Logo.png" alt="Government of Canada logo" loading="lazy" />
+                  <div>
+                    <p class="timeline-company">Department of National Defence - Government of Canada</p>
+                  </div>
+                </div>
+                <span class="timeline-period">May 2024 – Dec 2024</span>
+              </div>
+
+              <h4>Software Engineering Student (Co-op)</h4>
+              <p>Maintained SAP-based systems, scheduled batch jobs, and developed ABAP reports to improve reliability and support business operations.</p>
+              <ul class="tech-list">
+                <li>SAP</li>
+                <li>ABAP</li>
+                <li>Batch Jobs</li>
+                <li>System Support</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <h3>Projects</h3>
+          <p>A few examples of design-driven, user-focused projects I’ve built across web development, UI design, and interactive experiences.</p>
+        </div>
+
+        <div class="projects-grid" aria-label="Portfolio project list">
+          <article class="project-card">
+            <div class="project-media project-media-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 20h18"></path>
+                <path d="M6 20v-5"></path>
+                <path d="M12 20v-9"></path>
+                <path d="M18 20v-14"></path>
+                <path d="M15.5 5.2l1.8 1.8 3.8-4.4"></path>
+              </svg>
+            </div>
+            <div class="project-body">
+              <h3>AI Supplier-Sourcing Agent</h3>
+              <p>
+                An AI agent that takes a parts list for submarine electronic warfare systems, conducts thorough research to identify candidate suppliers, and ranks them against a user-defined configuration — surfacing lead time, price, stock, and other supplier details in a generated Excel workbook. Designed and built independently, applying software design and requirements-engineering principles to produce the documentation that serves as the agent's knowledge base.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media">
+              <img src="dental-clinic.jpg" alt="Dental clinic website preview" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h3>Dental Clinic Website</h3>
+              <p>
+                A professional clinic website featuring online booking, service pages, provider profiles, testimonials, and clear patient-focused navigation.
+              </p>
+              <a class="project-link" href="https://jamesmalek047.github.io/UI_UX_Group_Projects/" target="_blank" rel="noreferrer">Open project →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media">
+              <img src="word-flash.png" alt="Word flash memory game preview" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h3>Word Flash Memory Game</h3>
+              <p>
+                A fun browser-based memory challenge where players view and recall a set of words under time pressure, building a quick and engaging gameplay loop.
+              </p>
+              <a class="project-link" href="https://frabjous-mousse-7910ff.netlify.app/index.html" target="_blank" rel="noreferrer">Open project →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media">
+              <img src="online-clothes-shopping.jpg" alt="Streetwear e-commerce website preview" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h3>E-Commerce Shop</h3>
+              <p>
+                A modern storefront experience with categories, account flow, shopping cart logic, product filtering, and a user-friendly checkout concept.
+              </p>
+              <a class="project-link" href="https://monumental-chimera-629d6c.netlify.app/home.html" target="_blank" rel="noreferrer">Open project →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media">
+              <img src="sport-app.jpg" alt="Sports dashboard preview" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h3>Sports Data Dashboard</h3>
+              <p>
+                An interactive data dashboard that visualizes player and team statistics by league, season, and performance category for clear comparisons.
+              </p>
+              <a class="project-link" href="https://melaniemalekk.github.io/Final_Website/" target="_blank" rel="noreferrer">Open project →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <h3>Skills</h3>
+          <p>A mix of software engineering fundamentals, testing expertise, and modern web development tools.</p>
+        </div>
+
+        <div class="skills-layout">
+          <article class="skill-card">
+            <h3>Programming &amp; Engineering</h3>
+            <div class="skill-list">
+              <span class="skill-badge">Java</span>
+              <span class="skill-badge">Python</span>
+              <span class="skill-badge">JavaScript</span>
+              <span class="skill-badge">HTML</span>
+              <span class="skill-badge">CSS</span>
+              <span class="skill-badge">React</span>
+              <span class="skill-badge">C</span>
+              <span class="skill-badge">ABAP</span>
+              <span class="skill-badge">Object-Oriented Programming</span>
+              <span class="skill-badge">Data Structures</span>
+              <span class="skill-badge">Angular</span>
+              <span class="skill-badge">SQL (Postgres)</span>
+              <span class="skill-badge">Requirements Engineering</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <h3>Testing &amp; Quality</h3>
+            <div class="skill-list">
+              <span class="skill-badge">Automation Testing</span>
+              <span class="skill-badge">Selenium</span>
+              <span class="skill-badge">JUnit</span>
+              <span class="skill-badge">Unit Testing</span>
+              <span class="skill-badge">Quality Control</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <h3>Web &amp; Cloud</h3>
+            <div class="skill-list">
+              <span class="skill-badge">React</span>
+              <span class="skill-badge">Node.js</span>
+              <span class="skill-badge">Flask</span>
+              <span class="skill-badge">Django</span>
+              <span class="skill-badge">REST APIs</span>
+              <span class="skill-badge">OpenStack</span>
+              <span class="skill-badge">Kubernetes</span>
+              <span class="skill-badge">Helm</span>
+              <span class="skill-badge">Docker</span>
+              <span class="skill-badge">PostgreSQL</span>
+              <span class="skill-badge">Azure DevOps</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <h3>Workflow &amp; Collaboration</h3>
+            <div class="skill-list">
+              <span class="skill-badge">Git</span>
+              <span class="skill-badge">GitHub</span>
+              <span class="skill-badge">VS Code</span>
+              <span class="skill-badge">Linux</span>
+              <span class="skill-badge">Eclipse</span>
+              <span class="skill-badge">Jira</span>
+              <span class="skill-badge">Problem Solving</span>
+              <span class="skill-badge">Critical Thinking</span>
+              <span class="skill-badge">Agile</span>
+              <span class="skill-badge">Scrum</span>
+              <span class="skill-badge">UI/UX</span>
+              <span class="skill-badge">English</span>
+              <span class="skill-badge">French</span>
+              <span class="skill-badge">Arabic</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="section-shell">
       <div class="container">
         <div class="section-header">
           <h3>What I bring</h3>
-          <p>Focused on clean solutions, user impact, and reliability.</p>
         </div>
 
         <div class="features-grid">
@@ -101,29 +374,55 @@
             <h4>UI/UX Thinking</h4>
             <p>Creating clean, intuitive interfaces that prioritize clarity, accessibility, and a polished user experience.</p>
           </article>
+        </div>
+      </div>
+    </section>
 
-          <article class="feature-card">
-            <div class="icon">◉</div>
-            <h4>Cloud & Infrastructure</h4>
-            <p>Built and supported scalable internal platforms using Kubernetes, Helm, and OpenStack to improve deployment reliability and workflow speed.</p>
+    <section class="section-shell" id="contact">
+      <div class="container">
+        <div class="section-header contact-intro">
+          <h3>Let’s Connect!</h3>
+          <p>I’m open to software engineering opportunities, internships, and collaborations that create meaningful impact.</p>
+
+          <div class="cta-row">
+            <a class="primary-btn" href="mailto:mmale102@uottawa.ca">Email Me</a>
+            <a class="secondary-btn" href="https://www.linkedin.com/in/melaniemalek/" target="_blank" rel="noreferrer">Connect on LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="contact-grid" aria-label="Contact details">
+          <article class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                <path d="M3 7l9 6 9-6"></path>
+              </svg>
+            </div>
+            <h3>Email</h3>
+            <p>mmale102@uottawa.ca</p>
+            <a class="contact-card-link" href="mailto:mmale102@uottawa.ca" aria-label="Email Melanie Malek at mmale102@uottawa.ca"></a>
           </article>
 
-          <article class="feature-card">
-            <div class="icon">◌</div>
-            <h4>Data & Decision Support</h4>
-            <p>Transformed technical data into clear insights using dashboards and reporting tools like Power BI to help teams make faster, informed decisions.</p>
+          <article class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M6.6 10.8c1.2 2.4 3.2 4.4 5.6 5.6l1.9-1.9c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V19c0 .6-.4 1-1 1C10.9 20 4 13.1 4 4.8c0-.6.4-1 1-1h3.2c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"></path>
+              </svg>
+            </div>
+            <h3>Phone</h3>
+            <p>(613) 890-4170</p>
+            <a class="contact-card-link" href="tel:+16138904170" aria-label="Call Melanie Malek at (613) 890-4170"></a>
           </article>
 
-          <article class="feature-card">
-            <div class="icon">◇</div>
-            <h4>Cross-Functional Delivery</h4>
-            <p>Collaborated in Agile teams across engineering and stakeholders, combining communication and execution to deliver dependable features end-to-end.</p>
-          </article>
-
-          <article class="feature-card">
-            <div class="icon">⬢</div>
-            <h4>Product-Focused Execution</h4>
-            <p>Translate requirements into practical technical solutions, balancing code quality, usability, and delivery speed to create real user value.</p>
+          <article class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M6.94 8.5H3.56V20h3.38V8.5zM5.25 3.25a1.94 1.94 0 100 3.88 1.94 1.94 0 000-3.88zM20.44 20h-3.37v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V20H9.67V8.5h3.24v1.57h.05c.45-.85 1.55-1.75 3.19-1.75 3.41 0 4.04 2.25 4.04 5.17V20z"></path>
+              </svg>
+            </div>
+            <h3>LinkedIn</h3>
+            <p>linkedin.com/in/melaniemalek</p>
+            <a class="contact-card-link" href="https://www.linkedin.com/in/melaniemalek/" target="_blank" rel="noreferrer" aria-label="Visit Melanie Malek's LinkedIn profile"></a>
           </article>
         </div>
       </div>
