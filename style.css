@@ -188,7 +188,14 @@ button:focus-visible {
   display: flex;
   align-items: center;
   gap: 12px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.nav-links::-webkit-scrollbar {
+  display: none;
 }
 
 .nav-links a {
@@ -1184,92 +1191,13 @@ button:focus-visible {
   }
 }
 
-@media (max-width: 900px) {
-  .hero-grid,
-  .skills-layout,
-  .projects-grid,
-  .contact-grid,
-  .features-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .header-inner {
-    flex-direction: column;
-    justify-content: center;
-    padding: 16px 0 18px;
-  }
-
-  .nav-links {
-    justify-content: center;
-  }
-
-  .profile-frame {
-    max-width: 360px;
-  }
-
-  .resume-panel {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-@media (max-width: 560px) {
-  .stat-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .nav-links {
-    gap: 8px;
-  }
-
-  .nav-links a {
-    padding: 8px 12px;
-    font-size: 0.82rem;
-  }
-
-  .cta-row {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .primary-btn,
-  .secondary-btn {
-    width: auto;
-    min-width: 210px;
-  }
-
-  .job-header {
-    flex-direction: column;
-  }
-
-  .company-row {
-    align-items: flex-start;
-  }
-
-  .timeline {
-    padding-left: 0;
-  }
-
-  .timeline::before {
-    left: 10px;
-  }
-
-  .timeline-item::before {
-    left: -21px;
-    top: 18px;
-  }
-
-  .timeline-content {
-    padding: 18px 16px 14px;
-    margin-left: 8px;
-  }
-
-  .timeline-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .timeline-period {
-    white-space: normal;
+/*
+ * Below the desktop layout's natural width, scale the whole page down
+ * uniformly instead of reflowing it — phones see the same layout as
+ * desktop (same columns, same nav, same spacing), just smaller.
+ */
+@media (max-width: 1024px) {
+  body {
+    zoom: calc(100vw / 1024px);
   }
 }
